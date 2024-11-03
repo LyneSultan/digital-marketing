@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: linear-gradient(45deg, #21dadb, #35bbdf, #4d94e6);
+
+}
+
+.navbar-item {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-item>ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  max-width: 800px;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+.card-item{
+  flex:1;
+}
+.expertise{
+  justify-content: space-around ;
+  gap:30px;
+}
