@@ -9,3 +9,13 @@
 .wrap {
   flex-wrap: wrap;
 }
+.row{
+  flex-direction: row;
+}
+.justify-content {
+  justify-content: center;
+  align-items: center;
+}
+.full-width{
+  width: 100%;
+}

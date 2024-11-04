@@ -8,8 +8,12 @@ body {
 
 }
 
+.menu {
+  display: none;
+}
+
 .navbar-item {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -22,10 +26,129 @@ body {
   list-style-type: none;
 
 }
-.card-item{
-  flex:1;
+
+.welcome p {
+  max-width: 800px;
 }
-.expertise{
-  justify-content: space-around ;
-  gap:30px;
+
+section {
+  min-height: 100dvh;
+
+}
+
+.welcome {
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.expertise {
+  justify-content: space-around;
+}
+
+
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #21dadb;
+}
+
+.slides-container {
+  height: calc(100vh - 2rem);
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.expertise-item {
+  flex: 1;
+}
+
+.slide {
+  flex: 0 0 100%;
+  margin: 0px;
+}
+
+
+
+.partner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  min-width: 200px;
+  max-width: 400px;
+  box-sizing: border-box;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deliver-middle {
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .navbar-item ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+@media(max-width:760px) {
+  .deliver-middle {
+    flex-direction: column;
+  }
+
+  .expertise {
+    flex-direction: column;
+
+  }
 }
