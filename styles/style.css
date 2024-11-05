@@ -221,5 +221,33 @@ section {
   transition: transform 0.3s ease-out;
 }
 
+@media (max-width: 760px) {
+  .navbar-item ul {
+    display: none;
+  }
 
+  .menu {
+    display: block;
+  }
 
+  .deliver-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .welcome-item {
+    flex-direction: column;
+  }
+
+  .slides-container {
+    max-width: 300px;
+  }
+
+  .expertise {
+    flex-direction: column;
+  }
+}
