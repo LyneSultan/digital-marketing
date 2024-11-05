@@ -42,3 +42,19 @@ const animateCircle = () => {
 
 animateCircle();
 
+
+gsap.registerPlugin(MotionPathPlugin);
+
+gsap.to(".word", {
+  duration: 3,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath: {
+    path: [{ x: 0, y: -100 }, { x: 100, y: 0 }, { x: 0, y: 100 }, { x: -100, y: 0 }],
+    curviness: 1.5,
+    autoRotate: false
+  }
+});
+
+
