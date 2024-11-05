@@ -25,7 +25,10 @@ body {
 .menu {
   display: none;
 }
-
+.menu>img{
+   max-height:80px;
+   max-width: 60px;
+}
 .navbar-item img {
   height: 100%;
   width: 150px;
@@ -70,6 +73,10 @@ section {
   justify-content: space-around;
 }
 
+.word {
+  color: #21DADB;
+}
+
 .slide>img {
   width: 50%;
   height: 30%;
@@ -98,7 +105,7 @@ section {
 }
 
 .slides-container {
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 4rem);
   max-width: 500px;
   display: flex;
   overflow-x: scroll;
@@ -249,5 +256,32 @@ section {
 
   .expertise {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    font-weight: bold;
+    top: 100px;
+    left: 0;
+    background-color: #f3f6fe;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .navbar-item {
+    flex-direction: row;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }
