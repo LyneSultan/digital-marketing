@@ -1,1 +1,19 @@
+.primary-color-1 {
+  background-color: #21DADB;
+}
 
+.primary-color-2 {
+  background-color: #35BBDF;
+}
+
+.primary-color-3 {
+  background-color: #4D94E6;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #21dadb, #35bbdf, #4d94e6);
+}
+
+.light-blue {
+  background-color: #f3f6fe;
+}
