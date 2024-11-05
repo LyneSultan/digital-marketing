@@ -57,4 +57,17 @@ gsap.to(".word", {
   }
 });
 
+gsap.to(".deliver-item", {
+  opacity: 1,
+  scale: 1,
+  duration: 1,
+  ease: "power2.out",
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".deliver",
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "play none none reverse"
+  }
+});
 
