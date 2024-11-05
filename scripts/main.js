@@ -27,3 +27,18 @@ document.getElementById("back-to-top").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+
+const animateCircle = () => {
+  gsap.to(".circle-image", {
+    rotation: 360,
+    ease: "power1.inOut",
+    duration: 5,
+    repeat: -1,                  // Infinite repeat
+    paused: false
+  });
+};
+
+animateCircle();
+
